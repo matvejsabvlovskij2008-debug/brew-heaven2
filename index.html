@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brew Haven — уютная кофейня. Кофе, который согревает." />
+  <title>Brew Haven — кофейня</title>
+
+  <!-- Google Fonts: Playfair Display (заголовки) + Inter (текст) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome (иконки) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ====================== НАВИГАЦИЯ ====================== -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Brew Haven
+      </a>
+
+      <!-- Кнопка бургер-меню (только на мобильных) -->
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ====================== HERO ====================== -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1 class="hero-title">Brew Haven</h1>
+        <p class="hero-subtitle">Кофе, который согревает</p>
+        <a href="#contacts" class="btn">Забронировать столик</a>
+      </div>
+    </section>
+
+    <!-- ====================== О НАС ====================== -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Наша история</h2>
+          <p>
+            Brew Haven начался с маленького зерна и большой мечты. В 2016 году мы
+            открыли дверь нашей первой кофейни, чтобы делиться с городом кофе,
+            сваренным с любовью и вниманием к каждой детали.
+          </p>
+          <p>
+            Наша философия проста: честный продукт, тёплая атмосфера и гости,
+            которые возвращаются не только за кофе, а за ощущением дома.
+            Мы обжариваем зерно сами и знаем каждого бариста по имени.
+          </p>
+          <ul class="about-features">
+            <li><i class="fa-solid fa-seedling" aria-hidden="true"></i> Собственная обжарка зерна</li>
+            <li><i class="fa-solid fa-heart" aria-hidden="true"></i> Десерты из локальных ингредиентов</li>
+            <li><i class="fa-solid fa-people-roof" aria-hidden="true"></i> Уютное пространство для работы и встреч</li>
+          </ul>
+        </div>
+
+        <!-- Плейсхолдер: замените на <img src="images/about.jpg"> из своей папки images/ -->
+        <div class="about-image reveal" data-delay="0.15">
+          <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+          <span>Здесь будет фото кофейни<br />(папка images/)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== МЕНЮ ====================== -->
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2 class="section-title center reveal">Меню</h2>
+        <p class="section-subtitle center reveal" data-delay="0.1">
+          Готовим на зерне свежей обжарки — попробуйте наши хиты
+        </p>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <div class="menu-icon"><i class="fa-solid fa-mug-saucer" aria-hidden="true"></i></div>
+            <h3>Эспрессо</h3>
+            <p>Плотный, насыщенный, с густой пенкой. Классика для бодрого утра.</p>
+            <div class="menu-price"><span>250 ₽</span></div>
+          </article>
+
+          <article class="menu-card reveal" data-delay="0.08">
+            <div class="menu-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></div>
+            <h3>Капучино</h3>
+            <p>Бархатная молочная пенка и двойной эспрессо. Наш самый любимый.</p>
+            <div class="menu-price"><span>320 ₽</span></div>
+          </article>
+
+          <article class="menu-card reveal" data-delay="0.16">
+            <div class="menu-icon"><i class="fa-solid fa-glass-water" aria-hidden="true"></i></div>
+            <h3>Латте</h3>
+            <p>Нежный, молочный, с лёгкой кофейной горчинкой. Можно на овсяном.</p>
+            <div class="menu-price"><span>350 ₽</span></div>
+          </article>
+
+          <article class="menu-card reveal">
+            <div class="menu-icon"><i class="fa-solid fa-bread-slice" aria-hidden="true"></i></div>
+            <h3>Круассан</h3>
+            <p>Хрустящий, слоёный, испечён этим утром. С миндальным кремом.</p>
+            <div class="menu-price"><span>280 ₽</span></div>
+          </article>
+
+          <article class="menu-card reveal" data-delay="0.08">
+            <div class="menu-icon"><i class="fa-solid fa-cake-candles" aria-hidden="true"></i></div>
+            <h3>Чизкейк</h3>
+            <p>Классический нью-йоркский на песочной основе. Тает во рту.</p>
+            <div class="menu-price"><span>390 ₽</span></div>
+          </article>
+
+          <article class="menu-card reveal" data-delay="0.16">
+            <div class="menu-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
+            <h3>Чай облепиха</h3>
+            <p>Пряный, согревающий, с мёдом и апельсином. Зима в чашке.</p>
+            <div class="menu-price"><span>300 ₽</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== ГАЛЕРЕЯ ====================== -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2 class="section-title center reveal">Галерея</h2>
+        <p class="section-subtitle center reveal" data-delay="0.1">
+          Несколько мгновений из жизни нашей кофейни
+        </p>
+
+        <!-- Заглушки picsum.photos; при клике открывается лайтбокс -->
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal" tabindex="0" role="button"
+                  aria-label="Открыть фото: интерьер кофейни">
+            <img src="https://picsum.photos/seed/brewhaven1/600/450" alt="Интерьер кофейни"
+                 loading="lazy"
+                 data-full="https://picsum.photos/seed/brewhaven1/1200/900" />
+            <figcaption>Интерьер</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="0.08" tabindex="0" role="button"
+                  aria-label="Открыть фото: бариста за работой">
+            <img src="https://picsum.photos/seed/brewhaven2/600/450" alt="Бариста за работой"
+                 loading="lazy"
+                 data-full="https://picsum.photos/seed/brewhaven2/1200/900" />
+            <figcaption>Наши бариста</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="0.16" tabindex="0" role="button"
+                  aria-label="Открыть фото: капучино">
+            <img src="https://picsum.photos/seed/brewhaven3/600/450" alt="Чашка капучино"
+                 loading="lazy"
+                 data-full="https://picsum.photos/seed/brewhaven3/1200/900" />
+            <figcaption>Капучино</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="0.24" tabindex="0" role="button"
+                  aria-label="Открыть фото: десерты">
+            <img src="https://picsum.photos/seed/brewhaven4/600/450" alt="Десерты на витрине"
+                 loading="lazy"
+                 data-full="https://picsum.photos/seed/brewhaven4/1200/900" />
+            <figcaption>Десерты</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== ОТЗЫВЫ ====================== -->
+    <section id="reviews" class="section reviews">
+      <div class="container">
+        <h2 class="section-title center reveal">Отзывы</h2>
+        <p class="section-subtitle center reveal" data-delay="0.1">Что говорят наши гости</p>
+
+        <div class="slider reveal" data-delay="0.15" id="slider">
+          <div class="slider-viewport">
+            <div class="slides" id="slides">
+              <article class="slide">
+                <i class="fa-solid fa-quote-left slide-quote" aria-hidden="true"></i>
+                <p class="slide-text">
+                  Лучший капучино в городе! Уютно, пахнет свежей выпечкой,
+                  а бариста помнят мой заказ наизусть. Прихожу сюда почти каждый день.
+                </p>
+                <div class="slide-author">
+                  <div class="slide-avatar"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+                  <div>
+                    <strong>Анна К.</strong>
+                    <div class="slide-stars" aria-label="Оценка 5 из 5">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="slide">
+                <i class="fa-solid fa-quote-left slide-quote" aria-hidden="true"></i>
+                <p class="slide-text">
+                  Работаю из Brew Haven по утрам: тихо, много розеток,
+                  эспрессо — идеальный. А круассаны здесь исчезают быстрее, чем успевают остыть.
+                </p>
+                <div class="slide-author">
+                  <div class="slide-avatar"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+                  <div>
+                    <strong>Дмитрий П.</strong>
+                    <div class="slide-stars" aria-label="Оценка 5 из 5">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="slide">
+                <i class="fa-solid fa-quote-left slide-quote" aria-hidden="true"></i>
+                <p class="slide-text">
+                  Забронировали столик на день рождения — всё прошло отлично:
+                  красивая подача, тёплый приём и тот самый чизкейк, который стоит приехать попробовать.
+                </p>
+                <div class="slide-author">
+                  <div class="slide-avatar"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+                  <div>
+                    <strong>Елена М.</strong>
+                    <div class="slide-stars" aria-label="Оценка 5 из 5">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Кнопки навигации слайдера -->
+          <div class="slider-controls">
+            <button id="prevBtn" class="slider-btn" aria-label="Предыдущий отзыв">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button id="nextBtn" class="slider-btn" aria-label="Следующий отзыв">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== КОНТАКТЫ ====================== -->
+    <section id="contacts" class="section contacts">
+      <div class="container">
+        <h2 class="section-title center reveal">Контакты</h2>
+        <p class="section-subtitle center reveal" data-delay="0.1">
+          Забронируйте столик или просто загляните на чашечку
+        </p>
+
+        <div class="contacts-grid">
+          <!-- Контактная информация -->
+          <ul class="contact-info reveal">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div><strong>Адрес</strong><span>г. Москва, ул. Кофейная, 12</span></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <div><strong>Телефон</strong><a href="tel:+79991234567">+7 (999) 123-45-67</a></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <div><strong>Email</strong><a href="mailto:hello@brewhaven.ru">hello@brewhaven.ru</a></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <div><strong>Часы работы</strong><span>Пн–Пт: 8:00–22:00 · Сб–Вс: 9:00–23:00</span></div>
+            </li>
+          </ul>
+
+          <!-- Форма обратной связи -->
+          <form class="contact-form reveal" data-delay="0.15" id="contactForm" novalidate>
+            <label>
+              Имя
+              <input type="text" name="name" placeholder="Ваше имя" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Сообщение
+              <textarea name="message" rows="4" placeholder="Хочу забронировать столик на..." required></textarea>
+            </label>
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== ФУТЕР ====================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo footer-logo">
+        <i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Brew Haven
+      </a>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+      </div>
+
+      <p class="footer-copy">© 2026 Brew Haven. Сделано с любовью к кофе.</p>
+    </div>
+  </footer>
+
+  <!-- Кнопка «Наверх» -->
+  <button id="scrollTop" class="scroll-top" aria-label="Наверх">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Лайтбокс для галереи -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр фотографии">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <img id="lightboxImg" src="" alt="Просмотр фотографии" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- Toast-уведомление -->
+  <div class="toast" id="toast" role="status">
+    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+    Спасибо! Мы свяжемся с вами.
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
